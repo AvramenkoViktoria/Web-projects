@@ -12,61 +12,21 @@
     <div class="outer-container">
         <div class="search-panel">
             <div class="container top-rounded">
-                <input type="text" placeholder="Назва товару">
-                <button class="search-button" data-tooltip="Додати продукт">Додати</button>
+                <input type="text" id="product-name-input" placeholder="Назва товару">
+                <button class="search-button" data-tooltip="Додати продукт" id="add-button">Додати</button>
             </div>
-            <div class="container product-item">
-                <div class="product-name crossed">Помідори</div>
-                <div class="quantity-container">
-                    <div class="quantity">2</div>
-                </div>
-                <div class="button-container">
-                    <button class="buy-button" data-tooltip="Не куплено">Не куплено</button>
-                </div>
-            </div>
-            <div class="container product-item">
-                <div class="product-name">Яблука</div>
-                <div class="quantity-container">
-                    <button class="minus-button" data-tooltip="Зменшити">-</button>
-                    <div class="quantity">2</div>
-                    <button class="plus-button" data-tooltip="Збільшити">+</button>
-                </div>
-                <div class="button-container">
-                    <button class="buy-button" data-tooltip="Куплено">Куплено</button>
-                    <button class="cross-button" data-tooltip="Відмінити">×</button>
-                </div>
-            </div>
-            <div class="container product-item bottom-rounded">
-                <div class="product-name">Сир</div>
-                <div class="quantity-container">
-                    <button class="minus-button" data-tooltip="Зменшити">-</button>
-                    <div class="quantity">1</div>
-                    <button class="plus-button" data-tooltip="Збільшити">+</button>
-                </div>
-                <div class="button-container">
-                    <button class="buy-button" data-tooltip="Куплено">Куплено</button>
-                    <button class="cross-button" data-tooltip="Відмінити">×</button>
-                </div>
+            <div class="product-list">
+                <!-- Products will be added here -->
             </div>
         </div>
         <div class="info-panel">
             <div class="container label-panel top-rounded info-text">Залишилося</div>
-            <div class="container">
-                <span class="product">
-                    Яблукa
-                    <span class="amount">2</span>
-                </span>
-                <span class="product">
-                    Сир
-                    <span class="amount">1</span>
-                </span>
+            <div class="container remaining-products">
+                <!-- Remaining products will be added here -->
             </div>
             <div class="container label-panel info-text">Куплено</div>
-            <div class="container bottom-rounded">
-                <span class="product crossed">
-                    Помідори
-                    <span class="amount crossed">2</span>
-                </span>
+            <div class="container bought-products bottom-rounded">
+                <!-- Bought products will be added here -->
             </div>
         </div>
     </div>
@@ -79,6 +39,8 @@
             Avramenko Viktoria
         </div>
     </div>
+
+    <script src="Ex1.js"></script>
 </body>
 
 </html>
